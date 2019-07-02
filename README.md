@@ -10,7 +10,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist web-technologies/yii2-calculator "*"
+php composer.phar require web-technologies/yii2-calculator "*"
 ```
 
 or add
