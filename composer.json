@@ -1,0 +1,21 @@
+{
+    "name": "web-technologies/yii2-calculator",
+    "description": "Calculator extension for yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rashid",
+            "email": "web-technologies@yandex.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "webtechnologies\\calculator\\": ""
+        }
+    }
+}
