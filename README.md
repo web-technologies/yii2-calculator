@@ -47,6 +47,6 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?=Yii::$app->math->expr('( 5 + (5 * 6) - 3 + 4 * 4 ^ 6 + ( -3 * -5 * 4 + ( 3/34 + 1*3+6-3 + ( 4 / 2 ) ) ) )*-1')?>
+<?=Yii::$app->math->expr('( 5 + (5 * 6) - 3 + 4 * 4 ^ 6 + ( -3 * -5 * 4 + ( 3 / 34 + 1 * 3 + 6 - 3 + ( 4 / 2 ) ) ) ) * -1')?>
 //output: -16484.088235294
 ```
