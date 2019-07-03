@@ -30,6 +30,10 @@ class DefaultCalcHandler implements IMathCalculator {
             throw new \Exception('Не соответствие открывающих и закрывающих скобок');
         }
 
+        if (!$this->_isValidChars($expression)) {
+            throw new \Exception('Недопустимое выражение! Разрешенные символы: +,-,*,/,^,.,(,),0-9');
+        }
+
         $expression = str_replace([' ', '()'], '', $expression);
         $expression = "({$expression})";
         $counter = 0;
@@ -63,6 +67,14 @@ class DefaultCalcHandler implements IMathCalculator {
                 $counter--;
         }
         return $counter === 0;
+    }
+
+    /**
+     * @param string $expression
+     * @return bool
+     */
+    private function _isValidChars($expression) {
+        return !(bool)preg_match('#[^\+,\-,\*,\/,\^,\.,\d,\(,\)]+#', $expression);
     }
 
     /**
