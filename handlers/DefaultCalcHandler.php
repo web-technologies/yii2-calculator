@@ -74,7 +74,7 @@ class DefaultCalcHandler implements IMathCalculator {
      * @return bool
      */
     private function _isValidChars($expression) {
-        return !(bool)preg_match('#[^\+,\-,\*,\/,\^,\.,\d,\(,\)]+#', $expression);
+        return !(bool)preg_match('#[^\+\-\*\/\^\.\d\(\)\s]+#', $expression);
     }
 
     /**
